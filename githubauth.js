@@ -11,7 +11,7 @@ function githubauth(app){
           {
             clientID: process.env.github_client_id,
             clientSecret: process.env.github_client_secret,
-            callbackURL: "http://localhost:8080/github_registered",
+            callbackURL: "github_registered",
           },
           function (accessToken, refreshToken, profile, cb) {
             profile.accessToken = accessToken;

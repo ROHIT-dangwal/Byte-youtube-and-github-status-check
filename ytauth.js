@@ -9,7 +9,7 @@ function ytauth(app){
     passport.use(new GoogleStrategy({
         clientID: process.env.google_client_id,
         clientSecret: process.env.google_client_secret,
-        callbackURL: "/yt_registered",
+        callbackURL: "https://byte-youtube-and-github-status-check.onrender.com/yt_registered",
         scope: ['profile', 'email', 'https://www.googleapis.com/auth/youtube.readonly'],
     }, async (accessToken, refreshToken, profile, done) => {
         profile.accessToken = accessToken;

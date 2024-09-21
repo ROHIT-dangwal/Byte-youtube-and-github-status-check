@@ -7,6 +7,8 @@ const path=require("path");
 const githubauth=require('./githubauth.js');
 const ytauth = require("./ytauth.js");
 const app = express();
+app.set('views', path.join(__dirname, 'views'));  
+app.set('view engine', 'ejs');
 dotenv.config();
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(

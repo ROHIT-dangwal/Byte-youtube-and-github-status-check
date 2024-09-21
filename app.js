@@ -14,7 +14,6 @@ app.use(
       secret: process.env.secret,
       resave: false,
       saveUninitialized: true,
-      cookie: { secure: false },
     })
   );
 app.use(passport.initialize());

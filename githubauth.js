@@ -11,7 +11,7 @@ function githubauth(app){
           {
             clientID: process.env.github_client_id,
             clientSecret: process.env.github_client_secret,
-            callbackURL: "/github_registered",
+            callbackURL: "https://byte-youtube-and-github-status-check.onrender.com/github_registered",
           },
           function (accessToken, refreshToken, profile, cb) {
             profile.accessToken = accessToken;

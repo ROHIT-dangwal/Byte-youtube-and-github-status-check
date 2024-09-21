@@ -43,7 +43,7 @@ function githubauth(app){
             );
       
             if (response.status === 204) {
-              res.render("following.ejs",{
+              res.render("Following.ejs",{
                 user: req.user
               })
             } else {
